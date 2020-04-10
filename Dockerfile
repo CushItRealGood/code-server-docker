@@ -1,8 +1,5 @@
 FROM codercom/code-server
 
-#Install Unzip for shell scripts
-RUN sudo apt-get install -y unzip 
-
 #Install Terraform
 ADD terraform.sh /
 RUN sudo chmod +x /terraform.sh
