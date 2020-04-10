@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo apt-get install -y jq 
+sudo apt-get update
+sudo apt-get install -y jq wget unzip
 CUR_VER=$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version')
 wget "https://releases.hashicorp.com/terraform/${CUR_VER}/terraform_${CUR_VER}_linux_amd64.zip"
 unzip terraform_${CUR_VER}_linux_amd64.zip

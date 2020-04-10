@@ -1,5 +1,5 @@
 # Code Server + Terraform + AWS CLI
-`code-server-terraform-awscli` is [VS Code](https://github.com/Microsoft/vscode) compiled by the team at [cdr](https://github.com/cdr) and running [terraform](https://www.terraform.io/) on a remote server, accessible through the browser. The shell scripts called in the DockerFile pulls down the current versions of Terraform and AWSCLI then installs them on top of the [`code-server`](https://github.com/cdr/code-server) base image.
+`code-server-docker` is [VS Code](https://github.com/Microsoft/vscode) compiled by the team at [cdr](https://github.com/cdr) and running [terraform](https://www.terraform.io/) on a remote server, accessible through the browser. The shell scripts called in the DockerFile pulls down the current versions of Terraform and AWSCLI then installs them on top of the [`code-server`](https://github.com/cdr/code-server) base image.
 
 ### Docker Run 
 should operate as the following:

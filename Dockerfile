@@ -1,6 +1,4 @@
-FROM codercom/code-server
-
-RUN sudo apt-get install -y unzip
+FROM codercom/code-server:latest
 
 #Install Terraform
 ADD terraform.sh /
