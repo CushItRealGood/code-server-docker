@@ -1,5 +1,8 @@
-# Code Server + Terraform + AWS CLI
-`code-server-docker` is [VS Code](https://github.com/Microsoft/vscode) compiled by the team at [cdr](https://github.com/cdr) and running [terraform](https://www.terraform.io/) on a remote server, accessible through the browser. The shell scripts called in the DockerFile pulls down the current versions of Terraform and AWSCLI then installs them on top of the [`code-server`](https://github.com/cdr/code-server) base image.
+# Code Server+
+![cool badge icon](https://github.com/CushItRealGood/code-server-docker/workflows/Docker%20Image%20CI/badge.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/cush/code-server)](https://hub.docker.com/r/cush/code-server)
+
+[`code-server-docker`](https://hub.docker.com/r/cush/code-server) is browser accessible [VS Code](https://github.com/Microsoft/vscode) compiled by [cdr](https://github.com/cdr) with some addidtional tools. This project executes shell scripts that installs the latest versions of [Terraform](https://www.terraform.io/) and [AWSCLI](https://aws.amazon.com/cli/) on top of the [`code-server`](https://github.com/cdr/code-server) base image.
 
 ### Docker Run 
 should operate as the following:
@@ -35,6 +38,3 @@ services:
       - "traefik.port=8080"
       - "traefik.docker.network=dockernet"
 ```
-
-
-
