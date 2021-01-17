@@ -1,4 +1,4 @@
-FROM codercom/code-server:latest
+FROM codercom/code-server:3.7.4
 
 #Install Terraform
 ADD terraform.sh /
